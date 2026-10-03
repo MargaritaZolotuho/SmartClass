@@ -1150,20 +1150,19 @@ a {
     font-size: 42px;
   }
 
-  chat-wrapper {
+  .chat-wrapper {
     height: calc(100vh - 160px);
   }
+}
 
-  .chat-sidebar, 
-  .chat-panel {
-    position: static;  
-    right: auto;  
-    width: 100%;       
-    transform: none;   
-    box-shadow: none;
+@media (max-width: 767px) {
+
+  .chat-main {
+    display: none;
   }
 
-  .chats-container {
-    flex-direction: column;       
+  .chat-sidebar {
+    width: 100%;
+    max-width: 100%;
   }
 }
