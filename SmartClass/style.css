@@ -1154,11 +1154,16 @@ a {
     height: calc(100vh - 160px);
   }
 
-  .chat-sidebar {
-    width: 100%;
+  .chat-sidebar, 
+  .chat-panel {
+    position: static;  
+    right: auto;  
+    width: 100%;       
+    transform: none;   
+    box-shadow: none;
   }
 
-  .chat-main {
-    display: none;
+  .chats-container {
+    flex-direction: column;       
   }
 }
